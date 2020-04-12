@@ -16,15 +16,15 @@ body{
 .social{
     position:fixed;
     top:30%;
-    align:right;
-
+    right:1%
 }
 
 .social ul{
-    align: right;
+    position: relative;
+    right:0px;
     list-style-type: none;
     padding: 0;
-    transform: translatex(-270px);
+    transform: translatex(+270px);
 }
 
 .social ul li{
@@ -32,15 +32,15 @@ body{
     margin: 5px;
     background-color: rgba(0, 0, 0, 0.5);
     width: 300px;
-    text-align: right;
+    text-align: left;
     padding: 10px;
-    border-radius: 0 30px 30px 0;
+    border-radius: 30px 0px 0px 30px;
     transition: all 1s;  /* the transition property the duration of the effect */
 }
 /* the hover selector helps to style element whenever I mouse over them */
 .social ul li:hover{
     /* translatex is a <transform-function> data type which I can use to let my element move horizontally */
-    transform: translatex(110px);
+    transform: translatex(-110px);
 }
 
 .social ul li.twitter:hover{
