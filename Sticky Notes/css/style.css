@@ -44,24 +44,23 @@ body{
 }
 
 .social ul li.twitter:hover{
-    background-color: cornflowerblue;
+    background-color: #1DA1F2;;
 }
 
 .social ul li.facebook:hover{
-    background-color: royalblue;
+    background-color:	#3b5998
 }
 
 .social ul li.linkedin:hover{
-    background-color: skyblue;
+    background-color:  #2867B2;
 }
 
 .social ul li.instagram:hover{
-    background-color: #e2b3b3;
-    background-image: linear-gradient(180deg, #593bdd 0%, rgb(227, 28, 253) 50%, rgb(248, 252, 50) 100%);
+    background-color: #fb3958;
 }
 
 .social ul li.phonenumber:hover{
-    background-color: springgreen;
+    background-color: #205b29;
 }
 
 .social ul li a{
