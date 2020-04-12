@@ -1,4 +1,4 @@
-body {
+body{
     display: block;
     clear: both;
     float: none;
@@ -13,7 +13,6 @@ body {
     background-repeat: no-repeat;  
 }
 
-
 .social{
     position:fixed;
     top:30%;
@@ -24,6 +23,7 @@ body {
     padding: 0;
     transform: translatex(-270px);
 }
+
 .social ul li{
     display: block;
     margin: 5px;
@@ -46,9 +46,11 @@ body {
 .social ul li.facebook:hover{
     background-color: royalblue;
 }
+
 .social ul li.linkedin:hover{
     background-color: skyblue;
 }
+
 .social ul li.instagram:hover{
     background-color: #e2b3b3;
     background-image: linear-gradient(180deg, #593bdd 0%, rgb(227, 28, 253) 50%, rgb(248, 252, 50) 100%);
@@ -57,15 +59,18 @@ body {
 .social ul li.phonenumber:hover{
     background-color: springgreen;
 }
+
 .social ul li a{
     color: white;
     text-decoration: none;
 }
+
 .social ul li p{
     color:white;
     margin: 5px;
     margin-left:2px;    
 }
+
 .social ul li i{
     text-align: center;
     margin-left: 14px;
@@ -78,8 +83,8 @@ body {
     font-size: 20px;
     transform: rotate(0deg);
 }
+
 .social ul li:hover i{
     transform: rotate(360deg);
     transition: all 1s;
-
 }
