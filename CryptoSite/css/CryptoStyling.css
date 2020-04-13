@@ -43,7 +43,7 @@ html, body {
     margin-right:48px;
 }
 .active{
-    color: #19dafa !important;
+    color: #19dafa !important; /*the imporant keyword let the color prevail on other*/
 }
 .signup-btn{
     top:40px;
@@ -115,4 +115,11 @@ html, body {
     font-size: 13px;
     cursor: pointer;
 
+}
+small{
+    margin: auto 20px;
+    cursor: pointer;
+    font-size: 12px;
+    color: #19dafa;
+    letter-spacing: 3px;
 }
