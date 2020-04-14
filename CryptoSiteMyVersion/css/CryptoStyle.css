@@ -223,7 +223,7 @@ small{
     /* gradient shining border */
     border-style: solid;
     border-width: 2px;
-    border-image:linear-gradient(to right, rgba(0, 0, 0, 0.5), #db1bf6, #19d7f8, rgba(0, 0, 0, 0.5));
+    border-image:linear-gradient(to right, rgba(0, 0, 0, 0.4), #db1bf6, #19d7f8, rgba(0, 0, 0, 0.4));
     border-image-slice: 1;
     border-top:none;
     border-left:none;
