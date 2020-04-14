@@ -249,7 +249,7 @@ small{
 
 .menu ul li:hover .sub-menu ul li{
     margin:0;
-    width:150px;
+    width:130px;
     padding:10px;
     text-align: left;
     background: rgba(0, 0, 0, 0.5);
@@ -260,7 +260,13 @@ small{
     border-image-slice: 1;
     border-top:none;
     border-left:none;
-    border-right: none;
+    border-right: none; 
+}
+li:last-child{
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    
+    
 }
 
 
