@@ -1,19 +1,21 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="/static/fontawesome/fontawesome-all.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/PortfolioStyling.css"/>
 
     <title>Hello, world!</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
-  <body>
+</head>
+    <body>
     <header>
         <div class="menu-toggler">
             <div class="bar half start"></div>
@@ -22,24 +24,12 @@
         </div>
         <nav class="top-nav">
             <ul class="nav-list">
-                <li>
-                    <a href="Portfolio.html" class="nav-link">Home</a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li>
-                    <a href="#services" class="nav-link">Services</a>
-                </li>
-                <li>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#experience" class="nav-link">Experience</a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
+                <li><a href="Portfolio.html" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
         <div class="landing-text">
@@ -64,38 +54,39 @@
                 reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
                 Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
                 mollit anim id est laborum."</p>
-        </div>
-        <div class="social-media">
-            <ul class="nav-list">
-                    <li><a href="#" class="icon-link"><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href="#" class="icon-link"><i class="fab fa-twitter-square"></i></a></li>
-                    <li><a href="#" class="icon-link"><i class="fab fa-linkedin-square"></i></a></li>
-            </ul>
+                
+                <div class="social-media">
+                    <ul class="nav-list">
+                            <li><a href="#" class="icon-link"><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href="#" class="icon-link"><i class="fab fa-twitter-square"></i></a></li>
+                            <li><a href="#" class="icon-link"><i class="fab fa-linkedin-square"></i></a></li>
+                    </ul>
+                </div>
         </div>
     </section>
 
     <section class="services" id="services">
         <div class="container">
             <div class="section-heading">
-            <h1>Services</h1>
-            <h6>What I can do for you</h6>
+                <h1>Services</h1>
+                <h6>What I can do for you</h6>
             </div>
             <div class="my-skills">
                 <div class="skill">
-                <div class="icon-container">
-                    <i class="fas fa-layer-group"></i>
-                </div>
-                <h1>Web Design</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </p>
+                    <div class="icon-container">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                        <h1 style="color: white;">Web Design</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                        </p>
                 </div>
                 <div class="skill">
                     <div class="icon-container">
-                        <i class="fas fa-code-group"></i>
+                        <i class="fas fa-code"></i>
                     </div>
-                    <h1>Web Development</h1>
+                    <h1 style="color: white;">Web Development</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -103,9 +94,9 @@
                     </div>
                     <div class="skill">
                         <div class="icon-container">
-                            <i class="fas fa-chart-group"></i>
+                            <i class="fas fa-chart-bar"></i>
                         </div>
-                        <h1>Product Strategy</h1>
+                        <h1 style="color: white;">Product Strategy</h1>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -122,10 +113,10 @@
             <h6>View some of my recent work</h6>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-img">
+                <div class="portfolio-img has-margin-right">
                     <img src="../img/portfolioimg.jpg" alt="" style="width:500px">
                 </div>
-                <div class="portfolio-description">
+                <div class="portfolio-description has-margin-right">
                     <h6>Web Development</h6>
                     <h1>Blog Website</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -136,7 +127,7 @@
                 </div>
             </div>
             <div class="portfolio-item">
-                <div class="portfolio-description">
+                <div class="portfolio-description has-margin-right">
                     <h6>Web Design</h6>
                     <h1>Product Layout</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -145,15 +136,15 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                         <a href="#" class="cta">View Details</a> 
                 </div>
-                <div class="portfolio-img">
+                <div class="portfolio-img has-margin-right">
                     <img src="../img/portfolioimg1.jpg" alt="" style="width:500px">
                 </div>
             </div>
-            <div class="portfolio-item">
-                <div class="portfolio-img">
+            <div class="portfolio-item has-margin-right">
+                <div class="portfolio-img has-margin-right">
                     <img src="../img/portfolioimg2.jpg" alt="" style="width:500px">
                 </div>
-                <div class="portfolio-description">
+                <div class="portfolio-description has-margin-right">
                     <h6>Web Design</h6>
                     <h1>Product Sketch</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -226,8 +217,6 @@
                         <i class="fas fa-chevron-up"></i>
                         <p>&copy; 2020 Lorem Ipsum</p>
                     </div>
-
-
                 </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -235,5 +224,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
