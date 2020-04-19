@@ -1,0 +1,251 @@
+html, body{
+    background: #17202A;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-content: center;
+    font-weight: 400;
+}
+li img{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+}
+
+.mobile{
+    background-repeat: no-repeat;
+    background-size: content;
+    display: inline-block;
+    margin-top:100px;
+    width: 330px;
+    height: 640px;
+    background-position: center;
+    content: '';
+    position: relative;
+  }
+  .top{
+    position: absolute;
+    width: 380px;
+    height: 50px;
+    margin-left:25px;
+    margin-top:30px;
+    background:#efefef;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+
+.top:before{
+    content: '';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:40px;
+    height:3px; 
+    background-color: #333;
+    border: 2px solid #aaa;
+    border-radius:3px;
+}
+.top:after{
+    content: '';
+    position:absolute;
+    top:50%;
+    left:35%;
+    transform: translateY(-50%);
+    width:4px;
+    height:4px; 
+    background-color: #ccc;
+    border: 2px solid #aaa;
+    border-radius:50%;
+    box-shadow: 0 0 0 1px #999;  
+    animation: pulse 2s infinite;
+}
+
+.bottom{
+    position: absolute;
+    width: 380px;
+    height: 50px;
+    margin-left:25px;
+    margin-top:655px;
+    background:#efefef;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.bottom:before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 22px;
+    border: 2px solid #999;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+  .chat-bar{
+    position: absolute;
+    display:flex;
+    margin-top:80px;
+    margin-left:25px;
+    background: rgb(2, 95, 2);
+    background-position: center;
+    height:70px;
+    width:380px;
+    z-index:1;
+}
+.chat-bar img{
+    margin-top: 10px;
+    width: 50px;
+    height:50px;
+    border-radius: 50%;  
+}
+.chat-bar span{
+    display:block;
+    position: absolute;
+    margin-top:10px;
+    color:white;
+    margin-left:80px;
+    font-size: 25px;
+}
+.chat-bar i{
+    position: absolute;
+    color:white;
+    margin-top:15px;
+    right:15px;
+    font-size: 30px;
+}
+
+  .chat-w {
+      background-image: url(../img/background.jpg);
+      display: inline-block;
+      height: 555px;
+      width: 380px;
+      position: absolute;
+      border-radius: 4px;
+      left: 25px;
+      overflow: hidden;
+  }
+  
+.right{
+    position:absolute;
+    margin-left: 230px;
+}
+
+.left{
+    position:absolute;
+    margin-left:2px;
+}
+  ul{
+    margin: 70px;
+    padding: 0;
+  }
+
+  ul li{
+    list-style-type: none;
+    display: none;
+    margin: 10px;
+    clear: both;
+    overflow: hidden;
+    padding: 10px;
+  }  
+
+  .bubble {
+      position: relative;
+      width: 80%;
+      padding: 8px;
+      float: left;
+      display: inline-block;
+      vertical-align:middle; 
+      font-size: 13px;
+      color: #333;
+      text-align: left;
+  
+     background-color:  #ece5dd;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-box-shadow: 2px 2px 10px 0px rgba(97, 97, 97, 0.5);
+      -moz-box-shadow: 2px 2px 10px 0px rgba(97, 97, 97, 0.5);
+      box-shadow: 2px 2px 10px 0px rgba(97, 97, 97, 0.5);
+  }
+    .bubble2 {
+      position: relative;
+      width: 60%;  
+      padding: 8px;
+      float: right;
+      text-align: left;
+      display: inline-block;
+      vertical-align:middle;
+      font-size: 13px;
+      color: black;
+      background-color: #dcf8c6;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+      -webkit-box-shadow: 2px 2px 10px 0px rgba(97, 97, 97, 0.5);
+      -moz-box-shadow: 2px 2px 10px 0px rgba(97, 97, 97, 0.5);
+      box-shadow: 2px 2px 10px 0px rgba(97, 97, 97, 0.5);
+  }
+  
+    .bubble:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      height: 0;
+      left: -10px;
+      border-style: solid;
+      border-width: 10px 10px 10px 0;
+      border-color: transparent #e5e5ea;
+      display: block;
+      width: 0;
+      z-index: 1;
+  }
+  
+    .bubble2:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin:auto;
+      height: 0px;
+      right: -10px;
+      border-style: solid;
+      border-width: 10px 0 10px 10px;
+      border-color: transparent #dcf8c6;
+      display: block;
+      width: 0;
+      z-index: 1;
+  }
+  .scroll{
+    width: 210px;
+    overflow: hidden;
+    height: 80px;
+    display: inline-block;
+    position: relative;
+  }
+  .car{
+    width: 700px;
+    display: inline-block;
+   position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .car span{
+    padding: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    width: 160px;
+    margin: 0 10px;
+  }
+  
