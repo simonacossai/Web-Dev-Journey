@@ -54,9 +54,13 @@ img{
     text-align: center;
     margin-top: 9rem;
 }
+.showcase-content i{
+    color:white;
+    font-size:50px;
+}
 .showcase-content h1{
     font-weight: 500;
-    font-size: 5.2rem;
+    font-size: 5rem;
     line-height: 1.1;
     margin-bottom: 0 0 2rem;
 }
@@ -64,9 +68,13 @@ img{
     text-transform: uppercase;
     color: white;
     font-weight: 300;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.25rem;
     margin: 0 0 2rem;
+}
+#mainbutton{
+    width: 450px;
+    font-size:25px;
 }
 /*tabs*/
 .tabs{
@@ -237,7 +245,7 @@ img{
 }
 
 .text-dark {
-	color: #999;
+	color: rgb(151, 150, 150) !important;
 }
 
 /* Buttons */
@@ -359,7 +367,8 @@ img{
 		display: grid;
 		grid-template-columns: 1fr;
 		grid-gap: 2rem;
-		text-align: center;
+        text-align: center;
+        color:white;
 	}
 
 	.btn-xl {
