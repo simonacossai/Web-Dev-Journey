@@ -78,13 +78,14 @@ a{
     margin-left:3px;
 }
 #mainbutton{
-  margin-top:1rem;
-    width: 260px;
+    margin-top:1rem;
+    width: 210px;
     height:75px;
-    background:rgba(97, 97, 97, 0.4);
-    font-size: 2rem;
-    padding: 1rem 1rem;
+    background:rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    padding: 1.2rem 1rem;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 .btn:hover{
     opacity: 0.9;
@@ -151,21 +152,22 @@ a{
     object-fit: cover;
     user-select: none;
   }
-  .slider-image+i{
+  .post>i{
     position:absolute;
     align-items: center;
     align-content: center;
     text-align: center;
-    margin-left:128px;
+    margin-left:-125px;
     margin-top:150px;
     color: white;
     font-size:30px;  
-    display: none;   
+    display:none;
   }
-  .slider-image:hover+i{
-    display:block;
+  .post:hover > i{
+    display:inline-block;
     transition: .5s ease-in-out;    
   }
+  
 
 
 
