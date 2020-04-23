@@ -6,3 +6,8 @@ $('.post-wrapper').slick({
     nextArrow: $('.next'),
     prevArrow: $('.prev'),
   });
+
+    function pictureChange()
+    {
+          document.getElementsBySrc("../img/background.jpg").src="../img/catmovie.jpg";
+    }
