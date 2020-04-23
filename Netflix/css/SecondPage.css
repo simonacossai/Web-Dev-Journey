@@ -21,7 +21,7 @@ html, body {
     width: 100%;
     height: 100%;
     min-height: 100%;
-    background-color: black;
+    background-color:rgb(20, 20, 20);
 }
 ul{
     list-style: none;
@@ -32,13 +32,15 @@ h1, h2, h3, h4{
 a{
     color:white;
     text-decoration: none;
+    margin-top:25px;
 }
 .showcase{
     width: 100%;
     height: 100vh;
     position: relative;
-   
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../img/background.jpg);
 }
+
 .showcase-content{
     position:relative;
     margin: auto;
@@ -48,43 +50,40 @@ a{
     align-items: left;
     text-align: left;
     margin-top: 9rem;
+    margin-left: 30px;
 }
-video{
-	position:fixed;
-	left:0;
-        top:0;
-	min-width:100%;
-	min-height:100%;
-	width:auto;
-	height:auto;
-	z-index:-100;
-	visibility: visible;
-}
+
 .showcase-content i{
     color:white;
-    font-size:50px;
+    font-size:45px;
 }
 .showcase-content h1{
-    font-weight: 500;
-    font-size: 5rem;
+    font-weight: 600;
+    font-size: 4.5rem;
     line-height: 1.1;
-    margin-bottom: 0 0 2rem;
+    margin-top: 20%;
+    margin-bottom: 0 0 1rem;
+}
+.showcase-content span{
+  color: var(--primary-color);
 }
 .showcase-content p{
     text-transform: uppercase;
     color: white;
     font-weight: 300;
     font-size: 1.3rem;
-    line-height: 1.25rem;
-    margin: 0 0 2rem;
+    line-height: 1.20rem;
+    margin: 0 0 0.5rem;
+    margin-top:0.5rem;
+    margin-left:3px;
 }
 #mainbutton{
+  margin-top:1rem;
     width: 260px;
     height:75px;
-    background: var(--primary-color);
-    margin-right:0px;
+    background:rgba(97, 97, 97, 0.4);
     font-size: 2rem;
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     text-transform: uppercase;
 }
 .btn:hover{
@@ -99,31 +98,39 @@ video{
     justify-content: space-between;
     width: 100%;
 }
+#nav a:hover{
+  color:rgb(151, 150, 150);
+}
 .post-slider{
+  margin-top:60px;
     position:relative;
   }
   .post-slider .slider-title{
-    text-align:center;
-    margin: 30px auto;
+    text-align:left;
+    margin: 20px auto;
+    margin-left: 30px;
+    font-weight:200;
     font-family: 'Roboto', sans-serif;
   }
   .post-slider .next{
     position:absolute;
-    top:50%;
-    right:30px;
+    top:40%;
+    right:10px;
     font-size:2em;
     cursor: pointer;
+    color: var(--primary-color);
   }
   .post-slider .prev{
     position:absolute;
-    top:50%;
-    left:30px;
+    top:40%;
+    left:10px;
     font-size: 2em;
     cursor:pointer;
+    color: var(--primary-color);
   }
   .post-slider .post-wrapper{
-    width: 84%;
-    height: 500px;
+    width: 95%;
+    height: 370px;
     margin: 0px auto;
     overflow: hidden;
   }
@@ -131,8 +138,8 @@ video{
   .post-slider .post-wrapper .post{
     background: transparent;
     display: inline-block;
-    width:300px;
-    height:450px;
+    width:550px;
+    height:300px;
     margin:0px 10px;
     box-shadow: 1rem 1rem 1rem -1rem rgb(0,0,0,0.5);
     z-index:0;
@@ -144,12 +151,22 @@ video{
     object-fit: cover;
     user-select: none;
   }
-  h4{
-    z-index:5;
-    display: flex;
-    justify-content: center;
+  .slider-image+i{
+    position:absolute;
     align-items: center;
-    margin-top:2px;
-    font-size:25px;
-    font-family: 'Roboto', sans-serif;
+    align-content: center;
+    text-align: center;
+    margin-left:128px;
+    margin-top:150px;
+    color: white;
+    font-size:30px;  
+    display: none;   
   }
+  .slider-image:hover+i{
+    display:block;
+    transition: .5s ease-in-out;    
+  }
+
+
+
+
