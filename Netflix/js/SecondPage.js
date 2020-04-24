@@ -7,7 +7,14 @@ $('.post-wrapper').slick({
     prevArrow: $('.prev'),
   });
 
-    function pictureChange()
+  function changeImage() {
+
+    if (document.getElementById("foreground").src == "../img/background.jpg") 
     {
-          document.getElementsBySrc("../img/background.jpg").src="../img/catmovie.jpg";
+        document.getElementById("foreground").src = "../img/catmovie.jpg";
     }
+    else 
+    {
+        document.getElementById("foreground").src = "../img/background.jpg";
+    }
+}
