@@ -9,12 +9,11 @@ $('.post-wrapper').slick({
 
   function changeImage() {
 
-    if (document.getElementById("foreground").src == "../img/background.jpg") 
-    {
-        document.getElementById("foreground").src = "../img/catmovie.jpg";
-    }
-    else 
-    {
-        document.getElementById("foreground").src = "../img/background.jpg";
-    }
+        document.getElementById('foreground').src = "img/catmovie.jpg";
+  
+}
+function changeImage2() {
+
+  document.getElementById('foreground').src = "img/catmovie2.jpg";
+
 }
