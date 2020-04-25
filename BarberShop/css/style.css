@@ -1,31 +1,30 @@
-
 #nav{
     padding: 0;
     position: absolute;
     display: block;
     width: 100%;
     z-index: 3;
-
 }
 .logo{
-    margin-left: 2px;
-    width:200px;
-    height:100px;
+    padding:20px;
+    margin-left: 10px;
+    width:250px;
+    height:120px;
 }
-.navbar-nav{
-    margin-left: 35%;
-
+.nav-link{
+    margin-top:0px;
+    padding:0;
 }
-
 a{
-    padding-left:15px;
     text-decoration: none;
     color:white;
     justify-content: space-between;
     font-size: 25px;  
+    padding:0;
+    margin:0;
 
 }
-.nav-item:hover{
+.nav-link:hover{
     color: grey;
 }
 
@@ -45,4 +44,35 @@ a{
     right:0;
     background: #000;
     opacity:0.5;
+}
+.mustache{
+    position:absolute;
+    z-index: 30;
+    top:40%;
+    left:40%;
+}
+
+.page-wrapper>h5{
+    position: absolute;
+    top:68%;
+    left:43%;
+    text-align: center;
+    font-size:30px;
+    color:#CD853F;
+}
+.page-wrapper>p{
+    position:absolute;
+    top:75%;
+    left:28%;
+    font-size:25px;
+    color:white;
+}
+
+.aboutimage{
+    width:400px;
+    height:600px;
+}
+.servicesimage{
+    width:250px;
+    height:300px;
 }
