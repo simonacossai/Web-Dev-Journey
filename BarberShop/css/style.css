@@ -1,18 +1,29 @@
+
 #nav{
+    padding: 0;
     position: absolute;
     display: block;
     width: 100%;
     z-index: 3;
+
+}
+.logo{
+    margin-left: 2px;
+    width:200px;
+    height:100px;
 }
 .navbar-nav{
-    justify-content: flex-end;
-    margin-left: 50%;
+    margin-left: 35%;
+
 }
+
 a{
+    padding-left:15px;
     text-decoration: none;
     color:white;
     justify-content: space-between;
     font-size: 25px;  
+
 }
 .nav-item:hover{
     color: grey;
