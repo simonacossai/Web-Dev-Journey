@@ -47,7 +47,7 @@ html, body {
 }
 
 .active, .menu ul li{
-    color: #19dafa !important; /*the imporant keyword let the color prevail on other*/
+    color: #fff; /*the imporant keyword let the color prevail on other*/
 }
 
 .signup-btn{
