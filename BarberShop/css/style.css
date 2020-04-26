@@ -118,6 +118,9 @@ a{
     margin-top:5rem;
     margin-bottom: 3rem;
 }
+#about h2{
+    color: #CD853F;
+}
 #about p{
     margin-bottom: 2rem;
     text-align:left;
@@ -481,6 +484,42 @@ body{background-color:#eee;}
 }
 /*price table styling end*/
 
+.section-heading{
+    text-align:center;
+}
+form{
+    width:50%;
+    margin: 0 auto;
+}
+form label{
+    font-size: 1.5rem;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom:5px;
+    border:none;
+    outline-color:#CD853F;
+}
+input[type="submit"]{
+    width:inital;
+    background-color:#CD853F;
+    color: #eee;
+    padding: 1rem 2rem;    
+    border-bottom: .8rem;
+    cursor: pointer;
+    transition: background-color 650ms;
+}
+input[type="submit"]:hover{
+    color: white;
+    background-color: black;
+}
+/*end contact*/
+
+/*start social menu*/
 .social-menu ul {
     position: absolute;
     left: 50%;
@@ -529,3 +568,37 @@ body{background-color:#eee;}
 .social-menu ul li:nth-child(4) a:hover {
     background-color: #0077B5;
 }
+/*end social bar*/
+/*start footer*/
+.copyright{
+    width:100%;
+    text-align:center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.up{
+    position:absolute;
+    width: 5rem;
+    height:5rem;
+    background-color: #CD853F;
+    top: -2.5rem;
+    right: 5rem;
+    border-radius: 100%;
+    display: flex;
+    animation: pulse 2s infinite;
+}
+.up:hover{
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    color:white;
+}
+.up i{
+  
+    font-size: 2rem;
+    margin:auto;
+}
+
+.copyright p{
+    font-size: 1.4rem;
+}
+/*end footer*/

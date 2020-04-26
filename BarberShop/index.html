@@ -61,6 +61,7 @@
       <h1 class="about-heading">About</h1>
       <div class="about-content">
         <div class="about-text">
+          <h2>Lorem ipsum</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -123,7 +124,7 @@
                       <div class="col-md-12">
                           <!--PRICE HEADING START-->
                           <div class="price-heading clearfix">
-                              <h1>Pricing Table</h1>
+                              <h1 style="color: black;">Pricing Table</h1>
                           </div>
                           <!--//PRICE HEADING END-->
                       </div>
@@ -309,7 +310,31 @@
           </section>             
       </div>
 <hr>
-      <section class="social" style="margin-left: 15rem;">
+<section class="contact" id="contact" style="margin-bottom: 5rem;">
+  <div class="container">
+      <div class="section-heading">
+      <h1>Contact</h1>
+      <h5>Book now</h5>
+      </div>
+  <form action="">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+      <label for="service">Services:</label>   
+      <select name="services" id="service">
+          <option value="">Lorem ipsum</option>
+          <option value="">Lorem ipsum</option>
+          <option value="">Lorem ipsum</option>
+      </select>
+      <label for="subject">Details:</label> 
+      <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+      <input type="submit" value="Submit"> 
+  </form>
+  </div>
+</section>
+<hr>
+      <section class="social" style="margin-left: 15rem;" style="margin-bottom: 5rem;">
       <div class="social-menu">
         <ul>
           <li><a href=""><i class="fa fa-facebook"></i></a></li>
@@ -319,6 +344,12 @@
         </ul>
       </div>
     </section>
+    <footer class="copyright">
+      <div class="up" id="up">
+          <i class="fas fa-chevron-up"></i>
+      </div>
+      <p>&copy; 2020 Simona Cossai</p>
+  </footer>
     <!-- Optional JavaScript -->
 <script src="javascripts/application.js"></script>
 <script src="js/jquery.js"></script>
