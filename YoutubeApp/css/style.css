@@ -1,0 +1,67 @@
+
+h4{
+    font-weight: 600;
+    margin-top:1rem;
+}
+p{
+   
+    color: grey;
+    font-size:0.7 rem;
+    line-height: 0.5;
+}
+
+body {
+	background-color: #eee;
+}
+
+.container {
+    width: 560px;
+	background-color: #fff;
+    margin: 0 auto;
+    border:0;
+    padding: 0;
+}
+
+header{
+	position: fixed;
+	text-align: center;
+    width: 560px;
+    background-color: #fff;
+}
+
+section {
+    position: fixed;
+    text-align: left;
+    width:560px;
+    top: 80px;
+    margin-left:0;
+
+}
+
+.logo {
+    width: 120px;
+    padding-top: 20px;
+
+}
+
+main {
+	padding: 400px 18px 10px;
+}
+.thumb{
+    height:70px;
+    border-radius: 4px;
+}
+article{
+    display:flex;
+    align-items: center;
+    padding: 8px 12px;
+    border:2px solid white;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+article:hover{
+    border: 2px solid #ff9999;
+}
+.details{
+    padding: 8px 22px;
+}
