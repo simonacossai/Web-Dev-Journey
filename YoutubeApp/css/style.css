@@ -7,7 +7,7 @@ p{
    
     color: grey;
     font-size:0.7 rem;
-    line-height: 0.5;
+    line-height: 1;
 }
 
 body {
@@ -27,6 +27,8 @@ header{
 	text-align: center;
     width: 560px;
     background-color: #fff;
+    z-index: 30000;
+    overflow: hidden;
 }
 
 section {
@@ -35,12 +37,16 @@ section {
     width:560px;
     top: 80px;
     margin-left:0;
+    background-color: #fff;
+    z-index:300000;
+    overflow: hidden;
 
 }
 
 .logo {
     width: 120px;
-    padding-top: 20px;
+    padding-top: 23px;
+    padding-bottom: 30px;
 
 }
 
