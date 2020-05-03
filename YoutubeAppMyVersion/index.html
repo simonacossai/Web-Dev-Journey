@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/5ea9116197.js" crossorigin="anonymous"></script>
@@ -10,56 +11,33 @@
 </head>
 <body>
 
-  <!--Start Page wrapper-->
-<div class="page-wrapper">
+  <div class="page-wrapper">
+    <div id="player">
+      <span>Live</span>
+      <span>Recorded</span>
+  </div>
+    <div class="backgroundcontainer">
+  <img src="img/sunshine.jpg" class="background" alt="">
+  </div>
+  <div class="playcontainer">
+  <i class="fa fa-play" aria-hidden="true" id="play"></i>
+  </div>
+  <!--start carousel-->
+  <div class="post-slider">
+  <div class="post-wrapper">
+    
+  </div>
+  </div>
+  
+  <!--end carousel-->
+  
+  </div>
 
-  <div class="backgroundcontainer">
-<img src="img/sunshine.jpg" class="background" alt="">
-</div>
-<div class="playcontainer">
-<i class="fa fa-play" aria-hidden="true" id="play"></i>
-</div>
-<!--start carousel-->
-<div class="post-slider">
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-<div class="post-wrapper">
-    <div class="post">
-<img src="" alt="" class="slider-image">
-    </div>
-    <div class="post">
-      <img src="" alt="" class="slider-image">
-          </div>
-    <div class="post">
-      <img src="" alt="" class="slider-image">
-    </div>
-     <div class="post">
-     <img src="" alt="" class="slider-image">
-      </div>
-      <div class="post">
-        <img src="" alt="" class="slider-image">
-         </div>
-         <div class="post">
-          <img src="" alt="" class="slider-image">
-           </div>
-           <div class="post">
-            <img src="" alt="" class="slider-image">
-             </div>
-             <div class="post">
-              <img src="" alt="" class="slider-image">
-               </div>
-               <div class="post">
-                <img src="" alt="" class="slider-image">
-                 </div>
-                 <div class="post">
-                  <img src="" alt="" class="slider-image">              
-                   </div>
-</div>
-</div>
-
-<!--end carousel-->
-
-</div>
-<!--end page wrapper-->
+  <script src="js/index.js"></script>
+<script src="https://apis.google.com/js/api.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/index.js"></script>
