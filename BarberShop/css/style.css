@@ -634,4 +634,7 @@ input[type="submit"]:hover{
     .servicesimage{
         margin-left:-30%;
     }
+    .about .text-center{
+        margin-top: 1rem;
+    }
 }
