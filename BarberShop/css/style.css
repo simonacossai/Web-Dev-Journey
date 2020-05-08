@@ -637,4 +637,7 @@ input[type="submit"]:hover{
     .about .text-center{
         margin-top: 1rem;
     }
+    .about img{
+        width: 300px;
+    }
 }

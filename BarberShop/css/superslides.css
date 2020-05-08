@@ -10,7 +10,7 @@
   top: 0;
   left: 0;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: hidden;
   height: 100%;
 }
 #slides .scrollable:after {
