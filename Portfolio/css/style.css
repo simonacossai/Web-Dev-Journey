@@ -40,6 +40,9 @@ h1{
     font-size: 40px;
 }
 
+#header h2{
+    margin-bottom: 2px;
+}
 
 .square{
     height:12px;
@@ -268,19 +271,22 @@ hr{
     display: flex;
     z-index: 1;
     text-align: center;
+    
 }
 .social-icons a{
     display: flex;
     text-decoration: none;
     list-style: none;
     color: black;
-    font-size: 35px;
+    font-size: 30px;
     cursor: pointer;
     margin-top: 10px;
     margin-right: 20px;
+    margin-left: 70%;
 }
 .social-icons ul{
     display:flex;
+    margin-left: 150px;
 }
 .social-icons li{
     text-decoration: none;
@@ -396,5 +402,66 @@ I have tried using media queries
 .about-text span{
     margin-right: 10px;
 }
+.social-icons ul{
+    display:flex;
+    margin-left: 50px;
+}
 }
 
+
+.container-skill {
+    margin: 40px auto;
+    width: 200px;
+    text-align: center;
+  }
+  .progress2 {
+    padding: 6px;
+    border-radius: 28px;
+    background: rgba(0, 0, 0, 0.25);  
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.20), 0 1px rgba(255, 255, 255, 0.08);
+  }
+  
+  .progress-bar2 {
+    height: 10px;
+    border-radius: 28px;
+    background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+  }
+  
+  .progress-moved .progress-bar2 {
+    width: 85%; 
+    background-color: #f86983; 
+    animation: progressAnimation 6s;
+  }
+  
+  @keyframes progressAnimation {
+    0%   { width: 5%; background-color: rgb(255, 142, 168);}
+    100% { width: 85%; background-color: #f86983; }
+  }
+
+  .progress3 {
+    padding: 6px;
+    border-radius: 28px;
+    background: rgba(0, 0, 0, 0.25);  
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.20), 0 1px rgba(255, 255, 255, 0.08);
+  }
+  
+  .progress-bar3 {
+    height: 10px;
+    border-radius: 28px;
+    background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.05));
+    transition: 0.4s linear;  
+    transition-property: width, background-color;    
+  }
+  .progress-moved .progress-bar3 {
+    width: 70%; 
+    background-color: #f86983;  
+    animation: progressAnimation2 6s;
+  }
+  @keyframes progressAnimation2 {
+    0%   { width: 5%; background-color: rgb(255, 142, 168);}
+    100% { width: 70%; background-color: #f86983; }
+  }
