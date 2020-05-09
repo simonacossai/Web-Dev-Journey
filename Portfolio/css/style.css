@@ -3,7 +3,31 @@
     padding:0;
     font-family: 'Roboto', sans-serif;
 }
+.loader-wrapper{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background: white;
+    left: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index:9999999;
+  }
 
+.separator{
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separator span{
+    margin-top: 3rem;
+    margin-right: 4px;
+    margin-bottom: 3rem;
+}
 /*header start*/
 #header{
     height:100vh;
@@ -13,8 +37,10 @@
     display: flex;   
 }
 h1{
-    font-size: 34px;
+    font-size: 40px;
 }
+
+
 .square{
     height:12px;
     width: 12px;
@@ -27,11 +53,14 @@ h1{
     margin-top:140px;
 }
 .header-text h2{
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 .container{
     margin-right: 100px;
     margin-left: 100px;
+}
+.header-text p{
+    font-size: 16px;
 }
 /*header end*/
 
@@ -49,7 +78,7 @@ h1{
     text-shadow:0;
     width: 13px;
     height: 13px;
-    border-bottom: 4px solid #f67c92;;
+    border-bottom: 4px solid #f67c92;
     border-right: 4px solid #f67c92;
     -webkit-transform: translate(-50%,0) rotate(45deg);
     animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
@@ -125,6 +154,7 @@ nav ul li a{
     margin-right: 100px;
     display: inline-block;
 }
+
 /* about end*/
 
 
@@ -151,10 +181,7 @@ nav ul li a{
 .feature-col img{
     width: 100px;
 }
-.feature-col img:hover{
-    transform: rotate(360deg);
-    transition: 1s;
-}
+
 .feature-col h4{
     margin-bottom: 15px;
     font-size: 20px;
@@ -162,8 +189,6 @@ nav ul li a{
 
 }
 /*features end*/
-
-
 
 
 /*works start*/
@@ -240,26 +265,37 @@ hr{
 /*social icons start*/
 .social-icons{
     width: 50px;
-    position: fixed;
-    top: 50%;
-    left:0;
-    transform: translateY(-50%);
+    display: flex;
     z-index: 1;
+    text-align: center;
 }
 .social-icons a{
-    display: block;
-  text-decoration: none;
-  color: black;
-  font-size: 25px;
-  cursor: pointer;
-  margin-bottom: 5px;
-  margin-left: 2px;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 35px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.social-icons ul{
+    display:flex;
+}
+.social-icons li{
+    text-decoration: none;
+    list-style:none;
+    display:flex;
 }
 .social-icons a:hover{
     color: #f67c92;
     transition: .5s;
 }
 /*social icons end*/
+
+
+I have tried using media queries
+
 
 /*fade animation start*/
 [aos="fade"] {
@@ -270,7 +306,6 @@ hr{
   [aos="fade"].aos-animate {
     opacity: 1;
   }
-
 /*fade animation end*/
 
 
@@ -340,4 +375,26 @@ hr{
 .contact-left-col{
     flex-basis: 100%;
 }
+.about-text p{
+    margin-right: 10px;
 }
+
+.social-icons a{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.about-text h1{
+    margin-right:10px;
+}
+.about-text span{
+    margin-right: 10px;
+}
+}
+

@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="loader-wrapper">
+        <img src="img/813.gif">
+    </div>
     <section id="header">
         <div class="container">
            <div class="header-text" data-aos="fade-in" data-aos-duration="5000">
@@ -28,6 +31,11 @@
         </div>
     </section>
 
+    <div class="separator">
+        <span class="square"></span>
+        <span class="square"></span>
+        <span class="square"></span>
+    </div>
     <nav id="sideNav">
         <ul>
             <li><a href="#header">Home</a></li>
@@ -39,13 +47,15 @@
     </nav>
     <img src="img/menu.png" id="menuBtn">
 
+
+
         <!--about-->
     <section id="about">
-    <div class="about-left-col" data-aos="fade-right">
-        <img src="img/undraw_certification_aif8.png"  data-aos="fade-right"> 
+    <div class="about-left-col" data-aos="fade-in">
+        <img src="img/undraw_certification_aif8.png"  data-aos="fade-in"> 
     </div>
     <div class="about-right-col">
-        <div class="about-text" data-aos="fade-left">
+        <div class="about-text"  data-aos="fade-in">
             <h1>About</h1>
             <span class="square"></span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -58,24 +68,29 @@
         </div>
     </div>
 </section>
-<hr>
+
+<div class="separator">
+    <span class="square"></span>
+    <span class="square"></span>
+    <span class="square"></span>
+</div>
 
 <!--features-->
 <section id="features">
     <div class="feature-row">
-        <div class="feature-col">
+        <div class="feature-col" data-aos="fade-in">
             <img src="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png">
             <h4>Html</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div class="feature-col">
+        <div class="feature-col" data-aos="fade-in">
             <img src="https://icons-for-free.com/iconfiles/png/512/css3+internet+style+technology+web+website+icon-1320192729058533072.png">
             <h4>Css</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div class="feature-col">
+        <div class="feature-col" data-aos="fade-in">
             <img src="https://www.ambrix.net/wp-content/uploads/2019/05/javascript-logo.png">
             <h4>Javascript</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -83,14 +98,19 @@
         </div>
     </div>
 </section>
-<hr>
+
+<div class="separator">
+    <span class="square"></span>
+    <span class="square"></span>
+    <span class="square"></span>
+</div>
 
 <!--works-->
 <section id="works">
 <div class="container works-row">
     <div class="works-left-col">
-        <div class="works-text" data-aos="fade-right">
-            <h1>Lorem ipsum</h1>
+        <div class="works-text" data-aos="fade-in">
+            <h1>My works</h1>
             <span class="square"></span>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -102,20 +122,24 @@
         </div>
     </div>
     <div class="works-right-col">
-        <img src="img/undraw_work_in_progress_uhmv.png" data-aos="fade-left">
+        <img src="img/undraw_work_in_progress_uhmv.png" data-aos="fade-in">
     </div>
 </div>
 </section>
-<hr>
 
+<div class="separator">
+    <span class="square"></span>
+    <span class="square"></span>
+    <span class="square"></span>
+</div>
 <!--CONTACTS-->
 <section id="contact">
     <div class="container contact-row">
         <div class="contact-left-col">
-            <img src="img/undraw_private_data_7q35.png" data-aos="fade-right">
+            <img src="img/undraw_private_data_7q35.png" data-aos="fade-in">
         </div>
-        <div class="contact-right-col" data-aos="fade-left">
-        <h1>Lorem ipsum</h1>
+        <div class="contact-right-col" data-aos="fade-in">
+        <h1>Contact</h1>
         <span class="square"></span>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -124,6 +148,13 @@
            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
            est laborum.</p> 
+           <div class="social-icons">
+            <ul>
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
         </div>
     </div>
 </section>
@@ -139,24 +170,28 @@
 </section>
 
 <!--SOCIAL-->
-<div class="social-icons">
-    <ul>
-        <li><a href=""><i class="fa fa-facebook"></i></a></li>
-        <li><a href=""><i class="fa fa-twitter"></i></a></li>
-        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-    </ul>
-</div>
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js" type="text/javascript"></script> 
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
+  
   AOS.init({
       offset: 400,
-      duration: 800
+      duration: 800,
   });
+
 </script>
   <script>
+       document.onreadystatechange = function() { 
+	if (document.readyState !== "complete") { 
+		document.querySelector("body").style.visibility = "hidden"; 
+		document.querySelector(".loader-wrapper").style.visibility = "visible"; 
+	} else { 
+		document.querySelector(".loader-wrapper").style.display = "none"; 
+		document.querySelector("body").style.visibility = "visible"; 
+	} 
+}; 
         var menuBtn = document.getElementById("menuBtn");
         var sideNav = document.getElementById("sideNav");
 
@@ -174,6 +209,7 @@
         speed: 1000,
         speedAsDuration:true
     });
+
 
     </script>
 </body>
