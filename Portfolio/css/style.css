@@ -3,6 +3,7 @@
     padding:0;
     font-family: 'Roboto', sans-serif;
 }
+
 .loader-wrapper{
     width: 100%;
     height: 100%;
@@ -53,7 +54,7 @@ h1{
 }
 .header-text{
     max-width:350px;
-    margin-top:140px;
+    margin-top:160px;
 }
 .header-text h2{
     margin-bottom: 25px;
@@ -63,7 +64,7 @@ h1{
     margin-left: 100px;
 }
 .header-text p{
-    font-size: 16px;
+    font-size: 19px;
 }
 /*header end*/
 
@@ -157,6 +158,12 @@ nav ul li a{
     margin-right: 100px;
     display: inline-block;
 }
+.about-text h1{
+    font-size: 40px;
+}
+.about-text h2{
+    margin-bottom: 10px;
+}
 
 /* about end*/
 
@@ -187,9 +194,8 @@ nav ul li a{
 
 .feature-col h4{
     margin-bottom: 15px;
-    font-size: 20px;
-    font-weight: 400;
-
+    font-size: 22px;
+    font-weight: 500;
 }
 /*features end*/
 
@@ -216,6 +222,13 @@ nav ul li a{
 .work-text{
     max-width: 350px;
 }
+p{
+    font-size: 18px;
+}
+ a{
+    color: black;
+    font-weight: 700;
+}
 
 /*works end*/
 
@@ -238,6 +251,7 @@ nav ul li a{
 .contact h1{
     font-size: 20px;
 }
+
                
 /*contact end*/
 
@@ -267,6 +281,7 @@ hr{
 
 /*social icons start*/
 .social-icons{
+    margin-top: 1rem;
     width: 50px;
     display: flex;
     z-index: 1;
@@ -282,13 +297,12 @@ hr{
     cursor: pointer;
     margin-top: 10px;
     margin-right: 20px;
-    margin-left: 70%;
 }
 .social-icons ul{
     display:flex;
     margin-left: 150px;
 }
-.social-icons li{
+.social-icons ul li{
     text-decoration: none;
     list-style:none;
     display:flex;
@@ -332,7 +346,7 @@ I have tried using media queries
     }
     .header-text{
       
-        margin-top:100px;
+        margin-top:140px;
     }
     .container{
         margin-right: 50px;
@@ -390,7 +404,7 @@ I have tried using media queries
     text-decoration: none;
     list-style: none;
     color: black;
-    font-size: 25px;
+    font-size: 22px;
     cursor: pointer;
     margin-top: 10px;
     margin-right: 15px;
@@ -399,6 +413,11 @@ I have tried using media queries
 .about-text h1{
     margin-right:10px;
 }
+.about-text h2{
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
 .about-text span{
     margin-right: 10px;
 }
@@ -465,3 +484,57 @@ I have tried using media queries
     0%   { width: 5%; background-color: rgb(255, 142, 168);}
     100% { width: 70%; background-color: #f86983; }
   }
+
+/*projects start*/
+#projects{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.project-row{
+    width: 80%;
+    margin: auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.project-col{
+    flex-basis: 25%;
+    text-align: center;
+}
+.project-col img{
+    position:relative;
+    width: 320px;
+    height: 200px;
+    border-radius: 10px;
+}
+.project-col button{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: -210px;
+    background-image: linear-gradient(to right, #f67c92 0%, #ee9ca7 51%, #f67c92 100%);
+    border-color:#f67c92;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 2px;
+    display:none;
+}
+.project-col img:hover+button{
+    display:inline-flex;
+}
+.project-col button:hover{
+    display:inline-flex;
+    background-position: right center; 
+}
+.project-col h4{
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: 500;
+}
+/*project end*/
