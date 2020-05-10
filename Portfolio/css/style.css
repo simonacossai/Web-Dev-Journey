@@ -331,6 +331,7 @@ p{
     margin-left: -210px;
     background-image: linear-gradient(to right, #f67c92 0%, #ee9ca7 51%, #f67c92 100%);
     border-color:#f67c92;
+    opacity:0;
     cursor: pointer;
     font-size: 18px;
     font-weight: 500;
@@ -344,14 +345,18 @@ p{
 }
 .project-col img:hover+button{
     display:inline-flex;
-    transition-duration: 1s ease-in-out;
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    opacity: 1;
 }
 
 .project-col button:hover{
     display:inline-flex;
     background-image: linear-gradient(to right,  #f86983 0%, #ff8ca1 51%,  #f86983 100%);
     color: white; 
-    transition: .5s ease;
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    opacity:1;
 }
 .project-col h4{
     margin-bottom: 15px;
@@ -558,3 +563,37 @@ I have tried using media queries
 }
 
 
+
+
+
+.fade-in {
+    animation: fadeIn ease 20s;
+    -webkit-animation: fadeIn ease 20s;
+    -moz-animation: fadeIn ease 20s;
+    -o-animation: fadeIn ease 20s;
+    -ms-animation: fadeIn ease 20s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
