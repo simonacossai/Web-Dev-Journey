@@ -559,7 +559,7 @@ I have tried using media queries
 }
 .social-icons ul{
     display:flex;
-    margin-left: 50px;
+    margin-left: 0px;
 }
 }
 
