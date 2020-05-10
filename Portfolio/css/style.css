@@ -335,13 +335,14 @@ p{
     cursor: pointer;
     font-size: 18px;
     font-weight: 500;
+    text-align:center;
     color:white;
     text-shadow: 2px 2px 4px #000000;
     width: 100px;
     height: 50px;
     outline: none;
     border-radius: 50px;
-    padding: 4px;
+    padding: 5px;
 }
 .project-col img:hover+button{
     display:inline-flex;
@@ -561,8 +562,6 @@ I have tried using media queries
     margin-left: 50px;
 }
 }
-
-
 
 
 
