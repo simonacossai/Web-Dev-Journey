@@ -307,6 +307,7 @@ p{
 .project-col{
     flex-basis: 25%;
     text-align: center;
+
 }
 .project-col img{
     position:relative;
@@ -315,6 +316,7 @@ p{
     border-radius: 10px;
     transition: .5s ease;
     backface-visibility: hidden;
+    box-shadow: 5px 5px 6px 2px rgb(255, 142, 168, 0.5);
 }
 .project-col button{
     transition: .5s ease;
