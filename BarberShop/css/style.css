@@ -10,28 +10,38 @@
     align-items: center;
     z-index:9999999;
   }
+  body{
+      overflow-x: hidden;
+  }
 #nav{
     padding: 0;
     position: absolute;
     display: block;
-    width: 100%;
+    max-width: 100%;
     z-index: 3;
-}
-.logo{
-    padding:20px;
-    margin-left: 10px;
-    width:250px;
-    height:120px;
-}
-.nav-link{
-    margin-top:0px;
-    padding:0;
+    margin-right: 100px;
+    margin-left:100px;
+    text-align: center;
+    align-items: center;
 }
 
+.nav-link{
+    text-align: center;
+    margin-top:20px;
+    padding:0;
+}
+#navbarResponsive ul li{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px;
+}
 a{
+    text-align: center;
     text-decoration: none;
     color:white;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 25px;  
     padding:0;
     margin:0;
@@ -154,10 +164,7 @@ a{
     width: 400px; 
     height: 550px; 
   }
-.container-fluid{
-    padding-left: 5rem;
-    padding-right:5rem;
-}
+
 .container-fluid h2{
     color:#CD853F;
 }
@@ -598,10 +605,12 @@ input[type="submit"]:hover{
     border-radius: 100%;
     display: flex;
     animation: pulse 2s infinite;
+    transition: 0.4s;
 }
 .up:hover{
     transform: rotate(0deg) skew(0deg) translate(0, -10px);
     color:white;
+    transition: 0.4s;
 }
 .up i{
   
@@ -631,13 +640,27 @@ input[type="submit"]:hover{
         justify-content: center;
         margin: 0 auto;
     }
-    .servicesimage{
-        margin-left:-30%;
-    }
+ #services img{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+ }
     .about .text-center{
         margin-top: 1rem;
     }
     .about img{
         width: 300px;
+        display:block;
+        margin: 0 auto;
     }
+
 }
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+    position: relative;
+    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+
