@@ -657,6 +657,15 @@ input[type="submit"]:hover{
         margin: 0 auto;
     }
 
+    #about-text{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .generic_content{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 
