@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/5ea9116197.js" crossorigin="anonymous"></script>
     <title>Simona Cossai</title>
+   
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -137,22 +138,30 @@
 
 <section id="projects">
     <div class="project-row">
-        <div class="project-col" data-aos="fade-in">
-            <img src="img/barbershop.png" class="image">
-            <button type="button" onClick="parent.location='https://simonacossai.github.io/Web-Dev-Journey/BarberShop/'">View more</button>
-            <h4>Barbershop</h4>    
-        </div>
-        <div class="project-col" data-aos="fade-in">
-            <img src="img/netflix.png" class="image">
-            <button type="button" onClick="parent.location='https://simonacossai.github.io/Web-Dev-Journey/Netflix/'" >View more</button>
-            <h4>Mewflix</h4>
-
-        </div>
-        <div class="project-col" data-aos="fade-in">
-            <img src="img/Vibus.png" class="image">
-            <button type="button" onClick="parent.location='https://vibus.ai/'">View more</button>
-            <h4>Vibus</h4>
-        </div>
+        <figure class="project">
+            <img src="img/Vibus.png" alt="vibus website image" />
+            <figcaption>
+              <h3>View more</h3>
+            </figcaption>       
+            <a href="https://vibus.ai/"  target=”_blank”></a>
+          </figure>
+          <figure class="project"><img src="img/barbershop.png" alt="barbershop template image" />
+            <figcaption>
+              <h3>View more</h3>
+            </figcaption>
+            <a href="https://simonacossai.github.io/Web-Dev-Journey/BarberShop/" target=”_blank”></a>
+          </figure>
+          <figure class="project"><img src="img/netflix.png" alt="Mewflix website image" />
+            <figcaption>
+              <h3>View more</h3>
+            </figcaption>
+            <a href="https://simonacossai.github.io/Web-Dev-Journey/Netflix"  target=”_blank”></a>
+          </figure>
+    </div>
+    <div class="project-row">
+        <h4>Vibus</h4>
+        <h4>Barbershop</h4>
+        <h4>Mewflix</h4>
     </div>
 </section>
 
@@ -233,6 +242,13 @@
         speed: 1000,
         speedAsDuration:true
     });
+
+    $(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+
     </script>
 </body>
 </html>
